@@ -1,0 +1,7 @@
+#You are given a list named L. Print all the elements at odd position of list L.(We will take care of the input, you just have to print elements present at odd position)
+L = [int(i) for i in input().split()]
+l=len(L)
+i=1
+while(i<l):
+  print(L[i])
+  i+=2
