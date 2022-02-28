@@ -1,0 +1,22 @@
+#You are given a list L. Print the list of first 3 smallest elements in ascending order and last 2 greatest elements in descending order of the list L respectively.(We will take care of the input)
+
+L = [int(i) for i in input().split()]
+small=[]
+large=[]
+L.sort()
+#for i in range(3):
+ # small[i]=L[i]
+  
+ln=len(L)
+x=0
+for i in range(2):
+  x=ln-i-1
+  large.append(L[x])
+  
+#print(small)
+#print(large)
+for i in range(3):
+  small.append(L[i])
+
+print(small)
+print(large)
